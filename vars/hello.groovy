@@ -5,9 +5,7 @@ def call(String command) {
 			agent any			
 			stages 			
 			{			
-				stage("Build") 		
-				{		
-					tools { maven "MAVEN_HOME"}	
+				stage("Build"){
 					steps 	
 					{	
 						echo "hello"
@@ -16,5 +14,4 @@ def call(String command) {
 			}			
 		}				
 	}					
-}
 }

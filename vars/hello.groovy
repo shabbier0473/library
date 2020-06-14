@@ -1,16 +1,15 @@
-def call(string command){
-    if(command == "hello")
+def call(String command){
+    if(command=="hello")
     {
-
-pipeline{
-    agents any 
-    stages{
-        stage('hello'){
-            steps{
-                echo "hello"
+        pipeline{
+        agents any 
+        stages{
+            stage('hello'){
+                steps{
+                    echo "hello"
+                    }
+                }
             }
         }
-    }
-}
 }
 }

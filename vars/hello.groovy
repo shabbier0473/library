@@ -1,10 +1,10 @@
-def call(String command){
-    if(command=="hello")
+def call(string command){
+    if(command == "hello")
     {
         pipeline{
         agents any 
         stages{
-            stage('hello'){
+            stage(){
                 steps{
                     echo "hello"
                     }
